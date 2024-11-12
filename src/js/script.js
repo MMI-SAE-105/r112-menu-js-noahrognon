@@ -7,4 +7,9 @@ toggle.addEventListener("click", () => {
     console.log("isOpen : ", isOpen, "isClosed : ", isClosed);
     nav.ariaHidden = isOpen;
     toggle.ariaExpanded = isClosed;
+
+    document.body.classList.toggle("noscroll",isClosed)
 })
+
+
+

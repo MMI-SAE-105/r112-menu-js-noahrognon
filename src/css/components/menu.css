@@ -19,6 +19,7 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   opacity: 1; /* Rend le menu complètement opaque */
 }
 
+  /* Empêche le défilement de la page */
 /* On ajoute une classe sur le body pour empêcher le scroll lorsque le menu est ouvert */
 .noscroll {
   overflow: hidden; /* Empêche le défilement de la page */
