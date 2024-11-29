@@ -1,9 +1,14 @@
+/* Couleur de fond pour la page */
+body {
+  background-color: #EAF4E1; /* Couleur de fond blanc cassé/
+}
+
 /* Pour construire le menu en mobile : 
 On construit le menu tel qu'il sera une fois ouvert.
 On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le menu. */
 .menu {
   position: static; /* Fixe le menu en position, il ne défilera pas avec la page : https://developer.mozilla.org/fr/docs/Web/CSS/position#fixed */
-  background-color: white; /* Définit la couleur de fond du menu en blanc : https://developer.mozilla.org/fr/docs/Web/CSS/background-color */
+  background-color: #caff9b; /* Définit la couleur de fond du menu en blanc : https://developer.mozilla.org/fr/docs/Web/CSS/background-color */
   display : flex; /* Utilise Flexbox pour la mise en page des éléments enfants : https://developer.mozilla.org/fr/docs/Web/CSS/display-inside#flex */
   top : 0 ; /* Positionne le menu en haut de la page : https://developer.mozilla.org/fr/docs/Web/CSS/top */
   bottom : 0  ; /* Étend le menu jusqu'en bas de la page */
@@ -13,15 +18,16 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   opacity: 0; /* Rend le menu complètement transparent : https://developer.mozilla.org/fr/docs/Web/CSS/opacity */
   visibility: hidden; /* Cache le menu en le rendant invisible : https://developer.mozilla.org/fr/docs/Web/CSS/visibility#hidden  */
 }
+
 /* On se sert de Javascript pour gérer l'ouverture et la fermeture du menu avec l'attribut "aria-hidden" */
 .menu[aria-hidden="false"] {
   visibility: visible; /* Rend le menu visible */
   opacity: 1; /* Rend le menu complètement opaque */
 }
 
-  /* Empêche le défilement de la page */
+/* Empêche le défilement de la page */
 /* On ajoute une classe sur le body pour empêcher le scroll lorsque le menu est ouvert */
-.noscroll {
+.noscroll { 
   overflow: hidden; /* Empêche le défilement de la page */
 }
 
@@ -40,4 +46,32 @@ On ajoute les propriétés "visibility: hidden" et "opacity: 0" pour masquer le 
   transform: rotate(
     90deg
   ); /* Fait pivoter le bouton de menu de 90 degrés lorsqu'il est en état "expanded" */
+}
+
+/* Style pour la liste du menu */
+.menu__list {
+  list-style: none; /* Supprime les puces de la liste */
+  padding: 0; /* Supprime le padding par défaut */
+  margin: 0; /* Supprime la marge par défaut */
+  display: flex; /* Utilise Flexbox pour la mise en page des éléments enfants */
+  flex-direction: column; /* Aligne les éléments en colonne */
+  align-items: center; /* Centre les éléments horizontalement */
+}
+
+/* Style pour les éléments de la liste */
+.menu__item {
+  margin: 10px 0; /* Ajoute une marge verticale entre les éléments */
+}
+
+/* Style pour les liens du menu */
+.menu__link {
+  text-decoration: none; /* Supprime le soulignement des liens */
+  color: #333; /* Définit la couleur du texte */
+  font-size: 18px; /* Définit la taille de la police */
+  transition: color 0.3s; /* Ajoute une transition pour la couleur */
+}
+
+/* Style pour les liens du menu au survol */
+.menu__link:hover {
+  color: #007BFF; /* Change la couleur du texte au survol */
 }

@@ -1,0 +1,129 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 16px;
+
+.card {
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    margin: 16px;
+    padding: 16px;
+    background-color: #FFF8DC;
+    width: 200px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card__image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+}
+
+.card__content {
+    padding: 16px;
+}
+
+.card__title {
+    margin: 0;
+    font-size: 1.5em;
+    color: #ad00bd;
+}
+
+.card__description {
+    margin: 8px 0;
+    color: #ffffff;
+}
+}
+
+.card__button {
+    padding: 12px 24px;
+    margin-top: 16px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #ff00ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card__button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.cards--alt {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+.card--alt {
+    border: 2px solid #333;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 16px;
+    padding: 16px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.card--alt:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.card--alt__image {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #333;
+}
+
+.card--alt__content {
+    padding: 16px;
+}
+
+.card--alt__title {
+    margin: 0;
+    font-size: 1.75em;
+    color: #333;
+}
+
+.card--alt__description {
+    margin: 8px 0;
+    color: #666;
+}
+
+.card--alt__button {
+    padding: 12px 24px;
+    margin-top: 16px;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card--alt__button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}

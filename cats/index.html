@@ -3,16 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test td cats</title>
+    <title>Page d'accueil chats</title>
+    <script type="module" src="/src/js/script.js"></script>
+    <link rel="stylesheet" href="/src/css/components/menu.css" />
 </head>
 <body>
-    <h1>Premier chats du site </h1>
-    <ul>
-        <li><a href=".">Dossier courant</a></li>
-        <li><a href="index.html"> index du dossier</a></li>
-        <li><a href="..">dossier prents</a></li>
-        <li><a href="/">racine du site </a></li>
-        <img src="../public/images/Cat_November_2010-1a.jpg" alt="image d'un chat"
-    </ul>
+    <header class="header container">
+    
+        <div class="header__end">
+    
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+                🐈
+            </button>
+    
+            <!-- Menu principal -->
+            <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item">
+                        <a class="menu__link" href="/cats/chat-1.html">Chat 1 </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/cats/chat-2.html">Chat 2 </a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="/index.html">Acceuil</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="..">Retour</a>
+                    </li>
+                    <li><a href="/dogs/index.html">Pages des chiens</a> </li>
+                </ul>
+            </nav>
+            <!-- Fin du menu principal -->
+        </div>
+    </header>
+    <h1>Page d'accueil : Les Chats Gardiens des Rêves</h1>
+    <p>Bienvenue dans le monde mystérieux des Chats Gardiens des Rêves, un univers où les chats jouent un rôle crucial. Depuis
+    des siècles, ils veillent sur les humains en silence, protégeant leurs nuits. Chaque chat est doté d’un pouvoir unique,
+    capable de transformer les cauchemars en rêves inoubliables.
+    
+    Les Gardiens des Rêves sont plus qu’une légende. Ils entrent dans nos esprits endormis pour nous guider, nous apaiser,
+    et parfois, nous défier. Préparez-vous à découvrir leurs incroyables aventures à travers deux histoires fascinantes :
+    celle de Luna, la douce protectrice, et Shadow, le héros audacieux.
+    <img src="/public/images/image-acceuil.webp" alt="image d'accueil" />
+</p>
+    
 </body>
 </html>
